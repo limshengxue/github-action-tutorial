@@ -1,10 +1,7 @@
 name: Super-Linter
-
 permissions:
   contents: read
-  
-on: push
-
+'on': push
 jobs:
   super-lint:
     name: Lint code base
@@ -16,4 +13,4 @@ jobs:
         uses: super-linter/super-linter@v7.1.0
         env:
           DEFAULT_BRANCH: main
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          GITHUB_TOKEN: '${{secrets.GITHUB_TOKEN}}'
